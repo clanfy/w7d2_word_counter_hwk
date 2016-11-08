@@ -18,24 +18,28 @@ public class CounterTest {
     @Before
     public void before(){
         mWords = "The Rain in Spain falls gently on the plain";
+        mCounter = new Counter();
     }
 
     @Test
-    public void getStringTest(){
-        Counter countedWords = new Counter();
-        assertNotNull(countedWords.getWords(mWords));
+    public void getStringTestNotNull(){
+
+        assertNotNull(mCounter.getWords(mWords));
     }
+
+//    @Test
+//    public void getStringArrayTest(){
+//        Counter counter = new
+//    }
 
     @Test
     public void countStringTest(){
-        Counter countedWords = new Counter();
-        assertEquals(9, countedWords.getWords(mWords).size());
+        assertEquals(9, mCounter.getWords(mWords).size());
     }
 
     @Test
     public void wordCountTest(){
-        Counter countedWords = new Counter();
-        assertEquals(9, countedWords.getWordCount(mWords));
+        assertEquals(9, mCounter.getWordCount(mWords));
     }
 
 }
