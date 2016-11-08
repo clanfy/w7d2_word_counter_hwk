@@ -5,8 +5,8 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/question_text"
-        android:hint="@string/question"
+        android:id="@+id/sentence_text"
+        android:hint="@string/sentence"
         android:textSize="30dp"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"

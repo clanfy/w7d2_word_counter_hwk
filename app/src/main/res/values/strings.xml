@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Word Counter Thing</string>
+    <string name="sentence">Tell me something cool</string>
 </resources>
