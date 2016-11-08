@@ -37,6 +37,7 @@ public class WordCounter extends AppCompatActivity{
                 Log.d("WordCounter", "Cool button is cool with being clicked");
                 String sentence = mSentenceEditText.getText().toString();
                 Log.d("WordCounter", "The coolest sentence given was'" + sentence + "'");
+                mWordCountText.setText("text test");
 
             }
         });
