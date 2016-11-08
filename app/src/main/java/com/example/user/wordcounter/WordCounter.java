@@ -40,8 +40,9 @@ public class WordCounter extends AppCompatActivity{
 
                 Counter counted = new Counter();
                 String count = counted.getWordCountString(sentence);
+                String coolSentence = count + " cool words given. Peace out.";
 
-                mWordCountText.setText(count);
+                mWordCountText.setText(coolSentence);
 
             }
         });
