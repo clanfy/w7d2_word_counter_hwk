@@ -46,6 +46,11 @@ public class CounterTest {
         assertEquals(9, mCounter.getWordCount(mWords));
     }
 
+    @Test
+    public void wordCountStringTest(){
+        assertEquals("9", mCounter.getWordCountString(mWords));
+    }
+
 }
 
 

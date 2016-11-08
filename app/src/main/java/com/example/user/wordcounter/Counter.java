@@ -37,6 +37,11 @@ public class Counter {
 
     }
 
+    public String getWordCountString (String wordsToBeCounted){
+        int wordCount = getWords(wordsToBeCounted).size();
+        return String.valueOf(wordCount);
+    }
+
 }
 
 
