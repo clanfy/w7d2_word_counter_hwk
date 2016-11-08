@@ -32,6 +32,12 @@ public class CounterTest {
         assertEquals(9, countedWords.getWords(mWords).size());
     }
 
+    @Test
+    public void wordCountTest(){
+        Counter countedWords = new Counter();
+        assertEquals(9, countedWords.getWordCount(mWords));
+    }
+
 }
 
 

@@ -31,8 +31,9 @@ public class Counter {
 //        mWords.add(newWords);
 //    }
 //
-    public int getWordCount(String words) {
-
+    public int getWordCount(String wordsToBeCounted) {
+        int wordCount = getWords(wordsToBeCounted).size();
+        return wordCount;
 
     }
 
