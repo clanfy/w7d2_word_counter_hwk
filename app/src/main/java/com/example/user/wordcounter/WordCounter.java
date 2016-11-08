@@ -39,7 +39,7 @@ public class WordCounter extends AppCompatActivity{
                 Log.d("WordCounter", "The coolest sentence given was'" + sentence + "'");
 
                 Counter counted = new Counter();
-                int count = counted.getWordCount(sentence);
+                String count = counted.getWordCountString(sentence);
 
                 mWordCountText.setText(count);
 
