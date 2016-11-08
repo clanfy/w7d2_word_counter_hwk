@@ -3,6 +3,7 @@ package com.example.user.wordcounter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 
 public class WordCounter extends AppCompatActivity{
 
-    EditText mQuestionEditText;
+    EditText mSentenceEditText;
     TextView mWordCountText;
     Button mCoolButton;
 
@@ -25,12 +26,22 @@ public class WordCounter extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mQuestionEditText = (EditText) findViewById(R.id.sentence_text);
+        mSentenceEditText = (EditText) findViewById(R.id.sentence_text);
         mWordCountText = (TextView) findViewById(R.id.word_count);
         mCoolButton = (Button) findViewById(R.id.its_cool_button);
+
+
+        mCoolButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Log.d("WordCounter", "Cool button is cool with being clicked");
+                String sentence = mSentenceEditText.getText().toString();
+                Log.d("WordCounter", "The coolest sentence given was'" + sentence + "'");
+
+            }
+        });
+
     }
-
-
 
 
 }
